@@ -230,7 +230,7 @@ To add color scheme to your [fastn](https://fastn.com/)
 [doc-site](https://fastn-community.github.io/doc-site/cs/). Edit your `FASTN.ftd` file and add
 color scheme dependency into it.
 
-In the below example, we are using <add your color scheme name here> color scheme.
+In the below example, we are using <add color scheme name here> color scheme.
 
 Add color scheme dependency into your `FASTN.ftd` file as shown in below
 example:
@@ -245,17 +245,17 @@ lang: ftd
 Now modify `FASTN/ds.ftd` module which is already added inside your `fastn`
 package.
 
-Import `<color scheme>` dependency into `FASTN/ds.ftd`
+Import `<add color scheme name here>` dependency into `FASTN/ds.ftd`
 
 -- cb.code:
 lang: ftd
 
-\-- import: `<add color scheme name here>` as cs
+\-- import: `<add color scheme name here>`
 
 -- markdown:
 
 Change `-- component page` `colors` property `ftd.color-scheme colors:
-$ftd.default-colors` with `ftd.color-scheme colors: $cs.main`
+$ftd.default-colors` with `ftd.color-scheme colors: $<add color scheme name here>.main`
 
 replace this line of `FASTN/ds.ftd` file:
 
@@ -271,7 +271,7 @@ lang: ftd
 -- cb.code:
 lang: ftd
 
-\-- ftd.color-scheme color-scheme: $cs.main
+\-- ftd.color-scheme color-scheme: $<add color scheme name here>.main
 
 
 -- ftd.column:
@@ -302,12 +302,12 @@ Now modify `ftd` file and import `<color scheme>` into `ftd` file
 -- cb.code:
 lang: ftd
 
-\-- import: <user_name>.github.io/<repo_name> as cs
+\-- import: <user_name>.github.io/<repo_name>
 
 
 -- markdown:
 
-Now add `$cs.main` to your component, as shown in below example:
+Now add `$<repo_name>.main` to your component, as shown in below example:
 
 Copy below code snippet inside your `ftd` file, then deploy and test
 
@@ -318,7 +318,7 @@ lang: ftd
 
 \-- component example:
 caption title:
-ftd.color-scheme color-scheme: $cs.main
+ftd.color-scheme color-scheme: $<repo_name>.main
 
 \-- ftd.text: $example.title
 role: $inherited.types.heading-hero
