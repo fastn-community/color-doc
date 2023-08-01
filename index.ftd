@@ -692,7 +692,7 @@ align-content: center
 spacing.fixed.px: 4
 
 -- ftd.image:
-if: { ftd.dark-mode && !ftd.follow-system-dark-mode }
+if: { ftd.dark-mode }
 src: $assets.files.static.light-icon.svg
 width.fixed.px: 28
 height.fixed.px: 28
@@ -704,7 +704,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $package.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $package.mouse-in, v = false)
 
 -- ftd.image:
-if: { !ftd.dark-mode && !ftd.follow-system-dark-mode }
+if: { !ftd.dark-mode }
 src: $assets.files.static.dark-icon.svg
 width.fixed.px: 28
 height.fixed.px: 28
