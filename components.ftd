@@ -695,7 +695,7 @@ link: $button-base-light-small.link
 
 -- ftd.text: $button-base-light-small.title
 role: $inherited.types.copy-small
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text
 style: bold
 
 -- end: ftd.column
@@ -1248,7 +1248,7 @@ color: $inherited.colors.text-strong
 -- end: ftd.row
 
 -- ftd.row:
-background.solid: $inherited.colors.accent.tertiary
+background.solid: $inherited.colors.custom.ten
 height.fixed.px: 19
 width.fixed.px: 19
 border-radius.px: 4
@@ -1256,7 +1256,7 @@ align-content: center
 
 -- ftd.text: 6
 role: $inherited.types.label-small
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 
 -- end: ftd.row
 
@@ -1326,8 +1326,8 @@ width: fill-container
 
 -- ftd.text: 2
 role: $inherited.types.label-small
-color: $inherited.colors.text-strong
-background.solid: $inherited.colors.accent.tertiary
+color: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.custom.ten
 padding-horizontal.px: 5 
 padding-vertical.px: 2
 border-radius.px: 4
@@ -1512,7 +1512,7 @@ spacing: space-between
 
 -- ftd.text: Label
 role: $inherited.types.copy-small
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text
 
 -- ftd.image:
 src: $assets.files.static.search.svg
