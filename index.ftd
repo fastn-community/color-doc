@@ -757,7 +757,7 @@ powered-by-link: https://fastn.io/
 caption title:
 colors list pallete:
 boolean $dark-mode: true
-boolean $is-active: false
+boolean $is-active: true
 boolean $mouse-in: false
 
 -- ftd.column:
